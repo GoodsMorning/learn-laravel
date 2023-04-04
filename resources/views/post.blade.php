@@ -1,14 +1,29 @@
-<!DOCTYPE html>
+{{-- @extends('layout')
 
-<link rel="stylesheet" href="/app.css">
-
-<title> Learn-Laravel </title>
-
-<body>
+@section('content')
     <article>
-        <?= $post; ?>
+        <h1>
+            {{ $post->title }}
+        </h1>
+        <p>
+            {!! $post->body !!}
+        </p>
+
     </article>
 
     <a href="/">Back Home</a>
+@endsection
+down > top --}}
 
-</body>
+<x-layout>
+    <article>
+        <h1>
+            {{ $post->title }}
+        </h1>
+        <p>
+            {!! $post->body !!}
+        </p>
+
+    </article>
+    <a href="/">Back Home</a>
+</x-layout>

@@ -20,10 +20,7 @@ down > top --}}
         <h1>
             {{ $post->title }}
         </h1>
-        <p>
-            {!! $post->body !!}
-        </p>
-
+        {!! $post->body !!}
     </article>
     <a href="/">Back Home</a>
 </x-layout>
